@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* CSS general reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* root font-size -> 10px */
+html {
+    font-size: 62.5%;
+}
+
+/* Normalizing font-size in the body */
+body {
+    font-size: 1.6rem;
+}
+
+/* ==================================================== */
+
+/* General body definition */ 
+body {
+    background-color: #141414;
+    
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    /* main-axis */
+    align-items: center;
+    /* cross-axis */
+    justify-content: center;
+    
+    color: #fff;
+}
+
+/* General SLP card definition */  
+.social-links-card {
+    background-color: #1F1F1F;
+    /* background-color: darkcyan; */
+    width: auto;
+    height: auto; /* Muda para "alto" */
+    padding: 4rem;
+    border-radius: 1.2rem; 
+
+    display: flex;
+    flex-direction: column;
+
+    /* main-axis */
+    align-items: center;
+    /* cross-axis */
+    /* justify-content: space-around; */
+}
+
+/* Profile picture */
+.profile-picture img {
+    width: 8.8rem;
+    height: 8.8rem;
+
+    border-radius: 999px;
+}
+
+.name-location {
+    width: auto;
+    height: auto;
+    margin-top: 2.4rem;
+
+    text-align: center;
+}
+
+.name-location .name {
+    width: 30.4rem;
+    height: auto;
+
+    font-size: 2.4rem;
+    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+
+    line-height: 150%;
+    letter-spacing: 0rem;
+}
+
+.name-location .location {
+    color: #C4F82A;
+    font-size: 1.4rem;
+    
+    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+    line-height: 150%;
+    letter-spacing: 0rem;
+}
+
+
+.bio {
+    /* background-color: blue; */
+
+    width: 30.4rem;
+    height: auto
+    ;
+    margin-top: 2.4rem;
+
+    font-size: 1.4rem;
+    
+    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+
+    line-height: 150%;
+    letter-spacing: 0rem;
+
+    text-align: center;
+}
+
+
+
+
+.links-container {
+    width: 30.4rem;
+    height: auto; 
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    /* main-axis */
+    align-items: center;
+    /* cross-axis */
+    /* justify-content: ...; */
+
+    gap: 1.6rem;
+}
+
+.links-container a {
+    background-color: #333333;
+
+    width: 30.4rem;
+    height: 4.5rem;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    /* main-axis */
+    justify-content: center;
+    /* cross-axis */
+    align-items: center;
+
+
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0rem;
+
+    transition: background-color 0.5s ease-in-out 0s;
+}
+
+.links-container a:hover {
+    background-color: #C4F82A;
+    color: #000;
+
+    transition: background-color 0.30s ease-in-out 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.attribution {
+    margin-top: 4rem;
+    font-size: 1rem; text-align: center;
+}
+.attribution a {
+    color: #C4F82A;
+}
