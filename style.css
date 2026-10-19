@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 /* root font-size -> 10px */
@@ -21,33 +22,35 @@ body {
 
 /* ================================================== */
 
-/* General body settings */ 
+/* General body settings */
 body {
     background-color: #141414;
-    
+
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
 
     /* Flex box */
     display: flex;
+    /* current main-axis */
     flex-direction: column;
     /* main-axis */
     align-items: center;
     /* cross-axis */
     justify-content: center;
-    
+
     /* Font settings */
     color: #fff;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* General SLP card definition */  
+/* General SLP card definition */
 .social-links-card {
     background-color: #1F1F1F;
 
-    width: auto;
+    max-width: 30.4rem;
     height: auto;
     padding: 4rem;
-    border-radius: 1.2rem; 
+    border-radius: 1.2rem;
 
     display: flex;
     flex-direction: column;
@@ -79,7 +82,6 @@ body {
     height: auto;
 
     font-size: 2.4rem;
-    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 
     line-height: 150%;
@@ -90,8 +92,6 @@ body {
 .name-location .location {
     color: #C4F82A;
     font-size: 1.4rem;
-    
-    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
 
     line-height: 150%;
@@ -107,8 +107,6 @@ body {
 
     /* Font settings */
     font-size: 1.4rem;
-    
-    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
 
     /* Text settings */
@@ -120,60 +118,67 @@ body {
 /* Links container */
 .links-container {
     width: 30.4rem;
-    height: auto; 
+    height: auto;
+    padding: 0 4rem;
     margin-top: 24px;
 
     display: flex;
+    /* current main-axis */
     flex-direction: column;
     /* main-axis */
     align-items: center;
-    /* cross-axis */
-    /* justify-content: ...; */
-    /* Gap between links */ 
+    /* Gap between links */
     gap: 1.6rem;
 }
 
-/* Links */
-.links-container a {
+/*=== LINKS ===*/
+.links-container li {
     background-color: #333333;
 
-    width: 30.4rem;
+    width: 100%;
     height: 4.5rem;
     border-radius: 8px;
 
     /* Flex box */
     display: flex;
+    /* current main-axis */
     flex-direction: row;
     /* main-axis */
     justify-content: center;
     /* cross-axis */
     align-items: center;
 
-    /* Font settings */ 
-    color: #fff;
-    font-size: 1.4rem;
-    font-family: 'Inter' , system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-    line-height: 150%;
-    letter-spacing: 0rem;
-
     transition: background-color 0.5s ease-in-out 0s;
 }
 
-/* Links hover */
-.links-container a:hover {
-    background-color: #C4F82A;
-    color: #000;
+.links-container li {
+    /* Font settings */
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
 
-    transition: background-color 0.30s ease-in-out 0s;
+    line-height: 150%;
+}
+.links-container li a {
+    color: inherit;
 }
 
+/* Links hover */
+.links-container li:hover {
+    background-color: #C4F82A;
+    color: #000;
+}
+.links-container li a:hover {   
+    color: inherit;
+}
 
 /* Footer */
 .attribution {
     margin-top: 4rem;
-    font-size: 1rem; text-align: center;
+    font-size: 1rem;
+    text-align: center;
 }
+
 .attribution a {
     color: #C4F82A;
 }
